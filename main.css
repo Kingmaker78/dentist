@@ -1,0 +1,400 @@
+
+
+
+       
+:root {
+    --primary-color: rgba(50, 200, 250, 1);
+    --secondary-color: rgba(88, 125, 228, 1);
+--text-color: #333;
+--light-gray: #f8f9fa;
+--border-color: #e0e0e0;
+--card-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+--border-radius: 15px;
+}
+
+body {
+   
+    font-family: 'Arial', sans-serif;
+background-color: var(--light-gray);
+color: var(--text-color);
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-radius: 0 0 25px 25px;
+    border-bottom: 5px solid var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    position: fixed !important;
+    top: 0% !important;
+
+}
+
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.nav-link {
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-item button {
+    border-radius: 25px;
+    border: none;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    
+}
+
+.nav-item button:hover {
+    background: linear-gradient(270deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+}
+
+.nav-item button a {
+    color: white !important;
+    text-decoration: none;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.btn-primary {
+    background: linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+   
+}
+
+.btn-primary:hover {
+    background: linear-gradient(270deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+        left: 5%;
+        right: 5%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+.navbar-toggler{
+    background: linear-gradient( var(--secondary-color) 0%, var(--primary-color) 100%);
+    
+}
+.time{
+    margin-top: 10%;
+    height: 90vh;
+    width: 100%;
+
+}
+
+.appointment-section {
+    padding: 4rem 0;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    height: 100%;
+    overflow: hidden;
+
+}
+.card:hover {
+    border: none;
+    border-radius: var(--border-radius);
+  
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px black;
+}
+
+.card-header {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 2rem;
+  
+}
+
+.hours-table {
+    width: 100%;
+}
+
+
+
+.hours-table td {
+    padding: 0.75rem 0;
+}
+
+.hours-table td:last-child {
+    text-align: right;
+    color: #666;
+}
+
+.btn-emergency {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border: none;
+ 
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.btn-emergency:hover {
+  
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    border-radius: 25px;
+}
+
+.form-control, .form-select {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.btn-book {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border: none;
+
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    width: 100%;
+   
+}
+
+
+.btn-book:hover {
+   
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    border-radius: 25px;
+   
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 2rem;
+    }
+}
+
+
+.repo{
+            margin-top: 0%;
+            height: 130vh;
+            width: 100%;
+            position: relative;
+            background-image: url(assets/departments-bg.jpg.webp);
+            display: flex;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+
+        }
+.repo1{
+          width: 85%;
+          height: 53rem;
+         
+        position: absolute;
+        top: 7%;
+       
+        
+        }
+.repo1 h1{
+       text-align: center;
+     margin-top: 6%;
+     font-size: 3.5rem;
+     color: White;
+     
+        }
+.repo-card{
+    
+     width: 30%;
+     height: 16rem;
+   
+margin-left: 2%;
+margin-top: 2%;
+
+padding: 3rem;
+display: inline-block;
+
+padding-right: 1rem;
+        }
+.repo-card:hover{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 25px;
+  
+ 
+        }
+.repo-card img{
+    
+    display: inline-block; 
+    margin-top: -1rem;
+    color: White;
+     
+   
+        }
+.repo-card h2{
+display: inline-block;
+
+font-size: 2rem;
+margin-left: 1rem;
+text-shadow: 1px 1px 1px black;
+    color: White;
+   
+        }
+.repo-card p{
+margin-top: 3%;
+   color: White;
+        }
+.repo-card button{
+margin-top: 3%;
+
+border: none;
+font-size: 1.2rem;
+background-color: transparent;
+border-bottom: 2px solid var(--primary-color);
+color: White;
+
+   
+        }
+.repo-card:hover button{
+border: 2px solid White;
+background-color: transparent;
+border-radius: 25px;
+padding: 0vh 2vh 0vh 2vh ;
+transition: 0.3s ;
+border-left: none;
+border-right: none;
+font-size: 1.2rem;
+   
+        }
+        
+        @media (max-width: 1076px) {
+            .repo-card {
+                width: calc(33.333% - 2rem);
+                
+            }
+        }
+
+        @media (max-width: 992px) {
+            .repo-card {
+                width: calc(50% - 2rem);
+             
+                
+            }
+            .repo{
+                height: 65rem;
+                background-repeat: unset;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .repo-card {
+                width: calc(50% - 2rem);
+             
+                
+                display: block;
+            }
+            .repo{
+                height: 290vh;
+                background-repeat: unset;
+            }
+            .repo1 h1 {
+                font-size: 2.5rem;
+
+            }
+
+            .repo-card {
+                width: calc(100% - 2rem);
+            }
+
+            .repo-card h2 {
+                font-size: 1.5rem;
+
+            }
+        }
+        .Search1{
+            width: 100%;
+            height: 20rem;
+            background-image: url(assets/subscribe-bg.png.webp);
+            background-repeat: no-repeat;
+            margin-top: 10%;
+           
+         
+          
+        
+        }
+
+        
+         
+
+
+ 
+
+
+
+
